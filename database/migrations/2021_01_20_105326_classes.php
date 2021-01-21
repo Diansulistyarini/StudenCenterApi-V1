@@ -13,7 +13,7 @@ class Classes extends Migration
      */
     public function up()
     {
-        Schema::create('class', function (Blueprint $table) {
+        Schema::create('kelas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('kelas');
             $table->timestamps();

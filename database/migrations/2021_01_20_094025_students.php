@@ -19,7 +19,7 @@ class Students extends Migration
             $table->integer("kelas");
             $table->string("nisn");
             $table->date("ttl");
-            $table->date("anak_ke");
+            $table->string("anak_ke");
             $table->string("agama");
             $table->string('alamat');
             $table->string('no_hp');
@@ -28,10 +28,10 @@ class Students extends Migration
             $table->string('no_hp_ibu');
             $table->string('nama_ibu');
             $table->string('pekerjaan_ibu');
-            $table->string('no_hp_wali');
-            $table->string('nama_wali');
-            $table->string('pekerjaan_wali');
-            $table->string('alamat_wali');
+            $table->string('no_hp_wali')->nullable();
+            $table->string('nama_wali')->nullable();
+            $table->string('pekerjaan_wali')->nullable();
+            $table->string('alamat_wali')->nullable();
             $table->timestamps();
         });
     }
